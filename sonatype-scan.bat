@@ -1,0 +1,1 @@
+npx rimraf sonatype-project\node_modules & del sonatype-project\package-lock.json & cd sonatype-project && npm install & cd .. & java -jar nexus-iq-cli-1.124.0-01.jar -X -t release -i <your project sonatype id> -s http://osscasb:8070 -a <your login>:<your password> sonatype-project

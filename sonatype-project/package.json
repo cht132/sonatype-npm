@@ -1,0 +1,15 @@
+{
+    "name": "Sonatype Scan Sample",
+    "version": "1.0.0",
+    "description": "Scanning Template",
+    "main": "lib/index.js",
+    "scripts": {
+      "start": "webpack-dev-server --config config/webpack.dev.config.js",
+      "build": "webpack --config config/webpack.prod.config.js",
+      "pub": "npm run build && npm publish"
+    },
+    "author": "david",
+    "license": "ISC",
+    "dependencies": {
+    }
+}
