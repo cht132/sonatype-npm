@@ -10,7 +10,9 @@ Sonatype scanning template for NPM
 
 ### Steps
 
-1. copy your application libraries into `sonatype-project/package.json` "dependencies" field, dont replace the whole file
+1. Download this project
+
+2. Copy your application libraries into `sonatype-project/package.json` "dependencies" field, dont replace the whole file
 
    - Please dont add `react-scripts`, it is use for generate, build project
    - Remove all libraries version with "^"
@@ -19,12 +21,12 @@ Sonatype scanning template for NPM
 
    ![image-20211112153456963](image-20211112153456963.png)
 
-2. Edit `sonatype-scan.bat` file, change sonatype id, login, password
+3. Edit `sonatype-scan.bat` file, change sonatype id, login, password
 
    ![image-20211112153720592](image-20211112153720592.png)
 
-3. Run `sonatype-scan.bat`, report should be on [Sonatype](http://osscasb:8070)
+4. Run `sonatype-scan.bat`, report should be on [Sonatype](http://osscasb:8070)
 
-4. Your application report should able to display "T" and "D"
+5. Your application report should able to display "T" and "D"
 
    ![image-20211112154614804](image-20211112154614804.png)
