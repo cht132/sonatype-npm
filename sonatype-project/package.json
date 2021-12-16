@@ -1,5 +1,5 @@
 {
-    "name": "Sonatype Scan Sample",
+    "name": "Sonatype-Scan-Sample",
     "version": "1.0.0",
     "description": "Scanning Template",
     "main": "lib/index.js",
