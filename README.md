@@ -5,7 +5,7 @@ Sonatype scanning template for NPM
 
 1. Your workstation able to run `npx` command
 2. proxy config ready. npm command able to access internet
-3. java installed
+3. java 8 installed
 4. Sonatype account & application ID ready (http://osscasb:8070)
 
 ### Steps
