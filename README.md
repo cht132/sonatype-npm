@@ -27,7 +27,7 @@ Sonatype scanning template for NPM
     npx rimraf sonatype-project\node_modules & del sonatype-project\package-lock.json & cd sonatype-project && npm install & cd .. & java -jar nexus-iq-cli-1.160.0-01.jar -X -t release -i <Sonatype ID> -s http://<sonatype server>:<sonatype port> -a <Login>:<Password> sonatype-project
     ```
 
-4. Run `sonatype-scan.bat`, report should be on [Sonatype](http://<sonatype server>:<sonatype port>)
+4. Run `sonatype-scan.bat`, report should be on sonatype server
 
 5. Your application report should able to display "T" and "D"
 
