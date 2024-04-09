@@ -6,7 +6,7 @@ Sonatype scanning template for NPM
 1. Your workstation able to run `npx` command
 2. proxy config ready. npm command able to access internet
 3. java 8 installed
-4. Sonatype account & application ID ready (http://ossca:8070)
+4. Sonatype account & application ID ready
 
 ### Steps
 
@@ -24,10 +24,10 @@ Sonatype scanning template for NPM
 3. Edit `sonatype-scan.bat` file, change Sonatype ID, Login, Password
 
     ```
-    npx rimraf sonatype-project\node_modules & del sonatype-project\package-lock.json & cd sonatype-project && npm install & cd .. & java -jar nexus-iq-cli-1.160.0-01.jar -X -t release -i <Sonatype ID> -s http://ossca:8070 -a <Login>:<Password> sonatype-project
+    npx rimraf sonatype-project\node_modules & del sonatype-project\package-lock.json & cd sonatype-project && npm install & cd .. & java -jar nexus-iq-cli-1.160.0-01.jar -X -t release -i <Sonatype ID> -s http://<sonatype server>:<sonatype port> -a <Login>:<Password> sonatype-project
     ```
 
-4. Run `sonatype-scan.bat`, report should be on [Sonatype](http://ossca:8070)
+4. Run `sonatype-scan.bat`, report should be on [Sonatype](http://<sonatype server>:<sonatype port>)
 
 5. Your application report should able to display "T" and "D"
 
